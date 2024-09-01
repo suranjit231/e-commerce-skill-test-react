@@ -1,0 +1,12 @@
+  useEffect(()=>{
+
+       async function testFetachData(){
+            fetch('https://my-json-server.typicode.com/suranjit231/e-coomerce-skills-test-react/products')
+            .then(response => response.json())
+            .then(data => console.log(data));
+      
+        }
+
+        testFetachData();
+
+    },[])

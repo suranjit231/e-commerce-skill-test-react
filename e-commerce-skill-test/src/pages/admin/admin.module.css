@@ -1,0 +1,124 @@
+.adminPageContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .addButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .addButton:hover {
+    background-color: #45a049;
+  }
+  
+  .loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .productTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .productTable th, .productTable td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .productImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .editIcon, .deleteIcon {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .editIcon {
+    color: #007bff;
+  }
+  
+  .deleteIcon {
+    color: #e74c3c;
+  }
+  
+  @media (max-width: 768px) {
+    .productTable th, .productTable td {
+      padding: 8px;
+    }
+  
+    .productImage {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .addButton {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .productTable th, .productTable td {
+      font-size: 14px;
+    }
+  
+    .productImage {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .productTable th, .productTable td {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .productImage {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 370px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .addButton {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .productTable th, .productTable td {
+      font-size: 10px;
+      padding: 4px;
+    }
+  
+    .productImage {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  

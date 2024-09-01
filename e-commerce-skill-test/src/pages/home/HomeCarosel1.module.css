@@ -1,0 +1,58 @@
+.topCaroselContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap; /* Keep items on one line */
+   
+}
+
+.categoryBox {
+    width: auto;
+    height: auto;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out; 
+    /* animation: scroll 3s linear infinite; */
+}
+
+.categoryImgBox {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.categoryImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.categoryTitle {
+    font-size: 12px;
+}
+
+.topCaroselContainer:hover .categoryBox {
+    animation-play-state: paused; /* Pauses animation on hover */
+}
+
+.categoryImg:hover {
+    transform: scale(1.5) rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+

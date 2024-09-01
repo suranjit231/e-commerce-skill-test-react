@@ -1,0 +1,275 @@
+.productDetailsPageContainer {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.loaderContainer {
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftContainer {
+    min-height: 250px;
+    flex: 1 1;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.mainImageBox {
+    width: 100%;
+    padding: 10px;
+}
+
+.imageController {
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.imageController .imageView {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.imageView img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainImageBox img {
+    width: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000;
+    transition: 0.4s ease-in-out;
+}
+
+.mainImageBox img:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.rightContainer {
+    min-height: 320px;
+    flex: 1 1;
+    min-width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rightNameAndPriceDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.ratingDiv {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rightNameAndPriceDiv h3 {
+    font-size: 1.3rem;
+    color: rgb(0, 0, 43);
+}
+
+.price {
+    font-size: 16px;
+}
+
+.sizeContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.leftSizeBox, .rightSizeBox {
+    flex: 1;
+}
+
+.sizeBtnContainer, .colorBtnContainer {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 32px;
+}
+
+.size {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.color {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.colorBtnContainer .color:nth-child(1){
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: rgb(36, 24, 24);
+}
+
+.colorBtnContainer .color:nth-child(2){
+  
+    background-color: rgb(11, 235, 67);
+}
+
+.colorBtnContainer .color:nth-child(3){
+  
+    background-color: rgb(235, 11, 160);
+}
+
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cartHeading {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.cartControl {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.decreased, .increased{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: aliceblue;
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+}
+
+.decreased{
+   background-color: rgb(230, 0, 76);
+}
+
+.increased{
+    background-color: rgb(16, 247, 16);
+}
+
+.addToCartBtn {
+   border: 1px solid grey;
+   margin-left: 15px;
+   padding: 5px 12px;
+   font-size: 14px;
+   font-weight: 600;
+   cursor: pointer;
+   border-radius: 5px;
+   background-color: aliceblue;
+   color: rgb(16, 247, 16);
+   transition: 0.4s ease-in-out;
+}
+
+.addToCartBtn:hover{
+    background-color: rgb(16, 247, 16);
+    color: aliceblue;
+}
+
+.addToCartBtn:active, .decreased:active, .increased:active{
+    transform: scale(0.85);
+}
+
+
+
+
+.quantityCount {
+    padding: 5px;
+    
+    text-align: center;
+}
+
+.descriptionContainer h4 {
+    margin-bottom: 5px;
+}
+
+.reviewsContainer {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reviewHeaderDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addReviewBtn {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.reviewBoxWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.userImageDiv img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.userNameAndReview {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewDate {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.rateComment {
+    margin-top: 5px;
+}
+
+.borderButton {
+    border-bottom: 1px solid #ccc;
+    margin-top: 5px;
+}

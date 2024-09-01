@@ -1,0 +1,178 @@
+.navContainer{
+    height: 50px;
+    width: 100%;
+    /* background-color:#01352c; */
+    /* background-color:#01352ca6; */
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background-color: #002244;
+    
+    
+}
+
+.logo{
+    color: #f0f8ff;;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 20px;
+    text-decoration: none;
+
+}
+
+.rightNavbar{
+    display: flex;
+    align-items: center;
+    color: #f0f8ff;;
+    gap: 25px;
+    margin: 20px;
+    
+}
+
+.searchControll{
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.fiteredToggleIcon{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.searchControll:active{
+    transform: scale(0.85);
+}
+
+.loginBtn {
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease-in-out;
+   
+}
+
+.loginText::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1.5px;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+}
+
+.loginText:hover::after {
+    width: 100%;
+}
+
+.loginBtn:active{
+    transform: scale(0.85);
+}
+
+.searchBar{
+    position: absolute;
+    width: 100%;
+    padding: 1px 5px 5px 5px ;
+    display: flex;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.searchBar .searchInput{
+    flex: 1;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    background-color: rgba(130, 133, 133, 0.76);
+}
+
+
+.searchInput::placeholder {
+    color: rgb(82, 82, 82);
+  
+}
+
+.searchIcon{
+    position: absolute;
+    right: 55px;
+    font-size: 14px;
+    color: rgb(94, 91, 91);
+}
+
+.closedSearchDiv{
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid rgb(71, 0, 10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+   font-size: 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.4s ease-in-out;
+   top: -300px;
+}
+
+.closedSearchDiv:active{
+    transform: scale(0.85);
+}
+
+
+.searchBar.showSearch{
+    top: 50px;
+    position: sticky;
+    z-index: 1000;
+}
+
+.hideSearch{
+   
+    top: -300px;
+}
+
+.userProfileDiv{
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    background: linear-gradient(90deg, rgba(237,226,24,0.9920343137254902) 22%, rgba(0,255,31,0.9808298319327731) 88%, rgba(0,255,31,0.9808298319327731) 91%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.userProfileDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 540px) {
+    .logo{
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .rightNavbar{
+        margin: 0;
+
+    }
+
+    .searchControll, .fiteredToggleIcon{
+        font-size: 16px;
+    }
+
+}
